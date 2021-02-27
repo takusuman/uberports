@@ -1,6 +1,6 @@
 #!/bin/ksh
 # uberports(8): Simple heap of shell hacks for installing Slackbuilds in the BSD Ports style.
-# Copyright (c) 2021 Luiz Antônio Rangel
+# Copyright (c) MMXXI Luiz Antônio Rangel
 # Licensed under Volkerdings-Slackware
 
 # Include POSIX/Shell alternatives for UNIX commands and system information
@@ -20,6 +20,7 @@ fn_syncRepository(){
   repo_mirror_basename=${repo_mirror_basename%%/*}
   printf '%s\n' "Cloning repo via git (${repo_mirror_basename})"
   git clone -v ${slackbuilds_mirror} -b ${VERSION} ${ports_directory}
+  unset VERSION
   exit 0
 }
 
@@ -63,7 +64,7 @@ fn_downloadSource(){
 }
 
 fn_printHelp(){
- printf '%s\n' "'[USAGE]:' ${binary_name} '[-S|-u|-s <pkg>|-V|-h]'"
+ printf '%s\n' "[USAGE]: ${binary_name} [-S|-u|-s <pkg>|-V|-h]"
  exit 0
 }
 
@@ -76,17 +77,18 @@ Licensed under Volkerdings-Slackware
 "
 }
 
-# main
-OPTPARAMS="Sus:dV"
-while getopts "${OPTPARAMS}" OPT; do
-  case "${OPT}" in
-    "S") fn_syncRepository ;;
-    "u") fn_updateRepository ;;
-    "s") fn_searchPackages "${OPTARG}" ;;
-    "d") fn_downloadSource;;
-    "V") fn_printVersion ;;
-    "?") fn_printHelp ;;
-  esac
-done
+fn_main(){
+  OPTPARAMS="Sus:dV"
+  while getopts "${OPTPARAMS}" OPT; do
+    case "${OPT}" in
+      "S") fn_syncRepository ;;
+      "u") fn_updateRepository ;;
+      "s") fn_searchPackages "${OPTARG}" ;;
+      "d") fn_downloadSource;;
+      "V") fn_printVersion ;;
+      "?") fn_printHelp ;;
+    esac
+  done
+}
 
-
+fn_main ${@}
