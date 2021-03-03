@@ -3,12 +3,12 @@
 # Copyright (c) MMXXI Luiz Antônio Rangel
 # Licensed under Volkerdings-Slackware
 
-# Include POSIX/Shell alternatives for UNIX commands and system information
+# Include POSIX/Shell alternatives for UNIX commands (just in case of any Slackbuild using it) and system information
 . <(curl -s http://pindorama.tk/downloads/otto/releases/src/usr.lib/otto/posix-alt.shi)
 . /etc/os-release
 unset NAME ID VERSION_ID PRETTY_NAME ANSI_COLOR CPE_NAME HOME_URL SUPPORT_URL BUG_REPORT_URL
 alias chdir='cd'
-binary_name=`basename ${0}`
+binary_name="${0}"
 ports_directory='/usr/ports'
 slackbuilds_mirror='git://git.slackbuilds.org/slackbuilds.git'
 uberports_version='0.1'
@@ -16,30 +16,30 @@ LC_ALL='POSIX'
 export binary_name ports_directory slackbuilds_mirror LC_ALL
 
 fn_syncRepository(){
-  repo_mirror_basename=${slackbuilds_mirror#*//}
-  repo_mirror_basename=${repo_mirror_basename%%/*}
+  repo_mirror_basename="${slackbuilds_mirror#*//}"
+  repo_mirror_basename="${repo_mirror_basename%%/*}"
   printf '%s\n' "Cloning repo via git (${repo_mirror_basename})"
-  git clone -v ${slackbuilds_mirror} -b ${VERSION} ${ports_directory}
+  git clone -v "${slackbuilds_mirror}" -b "${VERSION}" "${ports_directory}"
   unset VERSION
   exit 0
 }
 
 fn_updateRepository(){
- chdir ${ports_directory}
- git pull -v origin ${VERSION}
+ chdir "${ports_directory}"
+ git pull -v origin "${VERSION}"
  chdir -
  exit 0
 }
 
 fn_searchPackages(){
-  packages=${@}
-  packages_quant=${#@}
-  for ((i=0; i < ${packages_quant}; i++)); do
+  packages=(${@})
+  packages_quant="${#@}"
+  for ((i=0; i < "${packages_quant}"; i++)); do
     slackbuild="${packages[${i}]}"
     slackbuild_dir="`find ${ports_directory} -name ${slackbuild}`"
     . "${slackbuild_dir}"/*.info # Source .info file
    # Check if theres any dependencies/requirements
-   if [ -z ${REQUIRES} ]; then
+   if [ -z "${REQUIRES}" ]; then
      REQUIRES='None'
    fi
    printf '%s' "\
@@ -56,15 +56,15 @@ Dependencies: ${REQUIRES}
 
 fn_downloadSource(){
     . ./*.info # Source .info file
-  download_url_basename=${DOWNLOAD#*//}
-  download_url_basename=${download_url_basename%%/*}
+  download_url_basename="${DOWNLOAD#*//}"
+  download_url_basename="${download_url_basename%%/*}"
   printf '%s\n' "Downloading ${PRGNAM} @ ${VERSION} (${download_url_basename})."
-  curl -# -L  ${DOWNLOAD} -O
+  curl -# -L  "${DOWNLOAD}" -O
   exit 0
 }
 
 fn_printHelp(){
- printf '%s\n' "[USAGE]: ${binary_name} [-S|-u|-s <pkg>|-V|-h]"
+ printf '%s\n' "[USAGE]: ${binary_name} [-S|-u|-s <pkg>|-d|-V|-h]"
  exit 0
 }
 
