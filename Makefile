@@ -19,8 +19,6 @@ build-man:
 	@echo "Compiling the manual page."
 	pandoc $(PRE_MAN_FILES) -s -t man -o $(MAN_FILES)
 
-sign: $(SIG)
-
 clean:
 	rm -f $(MAN_FILES)
 
