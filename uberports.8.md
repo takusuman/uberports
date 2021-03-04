@@ -17,7 +17,7 @@ Slackware is a **real operating system for real users**, so i believe that you s
 
 ## Why create "yet another Slackware-aimed BSD Ports clone"?
 - First of all, competition is good, principally if it's offering more freedom;  
-- Another implementations (like sport/slackports or retroports) are GPL'ed unnecessarily (see my thoughs at **COPYRIGHT**);  
+- Another implementations (like sport/slackports or retroports) are GPL'ed unnecessarily (see my thoughts at **COPYRIGHT**);  
 - The cited above implementations are hard to read/hack and bloated.  
 So, at the height of my ego, i've thought that i could do it better, __and i did it__ (along with a video showing the process, which is on Youtube, saying this just for sake of curiosity).  
 
@@ -25,7 +25,7 @@ So, at the height of my ego, i've thought that i could do it better, __and i did
 **-S** 
 : Syncs the Slackbuild repository via git.  
 **-u**
-: Updates the repository to the newest commit on the branch (that corresponds to $VERSION).  
+: Updates the repository to the newest commit on the branch (which corresponds to $VERSION).  
 **-s**
 : Search a package in the Slackbuilds source tree.  
 **-d**
