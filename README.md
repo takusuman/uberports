@@ -7,7 +7,7 @@
 - First of all, competition is good, principally if it's offering more freedom;  
 - Another implementations (like sport/slackports or retroports) are GPL'ed unnecessarily (see my thoughts at **COPYRIGHT**, in the manual page);  
 - The cited above implementations are hard to read/hack and bloated.  
-So, at the height of my ego, i've thought that i could do it better, __and i did it__ along with a video (in portuguese, without subtitles for now) showing the process, which is linked above.  
+So, at the height of my ego, i've thought that i could do it better, __and i did it__ along with a video (in portuguese, without subtitles for now) showing the process, which is linked below.  
 [![](http://img.youtube.com/vi/lm-B2qecsCI/0.jpg)](http://www.youtube.com/watch?v=lm-B2qecsCI "")
 
 ## Copyright
