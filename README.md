@@ -11,8 +11,8 @@ So, at the height of my ego, i've thought that i could do it better, __and i did
 [![](http://img.youtube.com/vi/lm-B2qecsCI/0.jpg)](http://www.youtube.com/watch?v=lm-B2qecsCI "")
 
 ## Acknowledgements
-`uberports` is strongly inspired by Jefferson "slackjeff" Carneiro's [http://github.com/slackjeff/retroports](`retroports`), so it possibly wouldn't exist as we know if it weren't for Carneiro's work.  
-And of course: both wouldn't exist if it weren't for the years of work by the [http://slackbuilds.org/](Slackbuilds) and [http://www.slackware.com/](Slackware) team.  
+`uberports` is strongly inspired by Jefferson "slackjeff" Carneiro's [`retroports`](http://github.com/slackjeff/retroports), so it possibly wouldn't exist as we know if it weren't for Carneiro's work.  
+And of course: both wouldn't exist if it weren't for the years of work by the [Slackbuilds](http://slackbuilds.org/) and [Slackware](http://www.slackware.com/) team.  
 Thanks to all!
 
 ## Copyright
