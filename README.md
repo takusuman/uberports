@@ -10,6 +10,11 @@
 So, at the height of my ego, i've thought that i could do it better, __and i did it__ along with a video (in portuguese, without subtitles for now) showing the process, which is linked below.  
 [![](http://img.youtube.com/vi/lm-B2qecsCI/0.jpg)](http://www.youtube.com/watch?v=lm-B2qecsCI "")
 
+## Acknowledgements
+`uberports` is strongly inspired by Jefferson "slackjeff" Carneiro's [http://github.com/slackjeff/retroports](`retroports`), so it possibly wouldn't exist as we know if it weren't for Carneiro's work.  
+And of course: both wouldn't exist if it weren't for the years of work by the [http://slackbuilds.org/](Slackbuilds) and [http://www.slackware.com/](Slackware) team.  
+Thanks to all!
+
 ## Copyright
-`uberports`(8) is licensed under the same license than Slackware `pkgtools`, which is a MIT-like license.  
+`uberports`(8) is licensed under the same license than Slackware `pkgtools`, which is a ISC-like license.  
 You can read it here: http://pindorama.tk/texto/licencas/copycenter/VOLKERDINGS-SLACKWARE_LICENSE.html
