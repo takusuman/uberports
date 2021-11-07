@@ -15,6 +15,10 @@ So, at the height of my ego, i've thought that i could do it better, __and i did
 And of course: both wouldn't exist if it weren't for the years of work by the [Slackbuilds](http://slackbuilds.org/) and [Slackware](http://www.slackware.com/) team.  
 Thanks to all!
 
+## Some cool related projects
+Jefferson Rocha's retroports: http://github.com/slackjeff/retroports  
+Arthur Bacci's 99ports: https://github.com/arthurbacci/99ports  
+
 ## Copyright
 `uberports`(8) is licensed under the same license than Slackware `pkgtools`, which is a ISC-like license.  
 You can read it here: http://pindorama.tk/texto/licencas/copycenter/VOLKERDINGS-SLACKWARE_LICENSE.html
