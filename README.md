@@ -16,7 +16,7 @@ And of course: both wouldn't exist if it weren't for the years of work by the [S
 Thanks to all!
 
 ## Some cool related projects
-Jefferson Rocha's retroports: http://github.com/slackjeff/retroports  
+Jefferson Carneiro's retroports: http://github.com/slackjeff/retroports  
 Arthur Bacci's 99ports: https://github.com/arthurbacci/99ports  
 
 ## Copyright
