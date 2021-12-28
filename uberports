@@ -4,7 +4,7 @@
 # Licensed under Volkerdings-Slackware
 
 # Include POSIX/Shell alternatives for UNIX commands (just in case of any Slackbuild using it) and system information
-libposixalt_download='https://raw.githubusercontent.com/takusuman/otto-pkg/master/usr.lib/otto/posix-alt.shi'
+libposixalt_download='https://raw.githubusercontent.com/Projeto-Pindorama/mitzune/master/lib/posix-alt.shi'
 . <(curl -s ${libposixalt_download})
 . /etc/os-release
 unset NAME ID VERSION_ID PRETTY_NAME ANSI_COLOR CPE_NAME HOME_URL SUPPORT_URL BUG_REPORT_URL
