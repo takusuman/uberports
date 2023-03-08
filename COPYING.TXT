@@ -1,14 +1,12 @@
-Copyright MMXXI Luiz A. Rangel et Projeto Pindorama
-
-Copyright MMXXI Luiz A. Rangel
+Copyright (c) 2021-2023 Luiz Antônio Rangel
 
 All rights reserved.
 
-Copyright (C) MMXXI Luiz A. Rangel
+Redistribution and use of this script, with or without modification,
+is permitted provided that the following conditions are met:
 
-Redistribution and use of this script, with or without modification, is permitted provided that the following conditions are met:
-
-1. Redistributions of this script must retain the above copyright notice, this list of conditions and the following disclaimer.
+1. Redistributions of this script must retain the above copyright
+notice, this list of conditions and the following disclaimer.
 
 THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
 IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 

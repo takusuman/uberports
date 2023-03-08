@@ -77,7 +77,7 @@ fn_printVersion(){
  printf '
 %s
 
-Copyright (c) 2021 Luiz Antônio Rangel
+Copyright (c) 2021-2023 Luiz Antônio Rangel
 Licensed under Volkerdings-Slackware
 ' "${uberports_version}"
 }
